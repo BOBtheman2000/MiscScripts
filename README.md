@@ -1,7 +1,9 @@
 # MiscScripts
 A collection of miscellaneous single scripts and lesser projects.
 
-This is just a big repository for any of my scripts that don't require installing any additional libraries or environments, and don't have any reason to be individual repos. I'll add new scripts here as I create them.
+This is just a big repository for any of my scripts that don't require installing any additional libraries or environments, or don't have any reason to be individual repos. I'll add new scripts here as I create them.
+
+Most of these will require Python 3.
 
 ## chess.py
 This is checkers.
@@ -68,3 +70,28 @@ Controls:
 Any input other than the recognised ones will just kill the script. Same goes if you divide bad and get floating point numbers (Illegal move in countdown)
 
 Sorry if this is esoteric and weird. I made this for practice, as if I ever have a shot at getting on countdown as a bisexual west australian
+
+## vflip.py
+A recreation of [Voltorb Flip](https://bulbapedia.bulbagarden.net/wiki/Voltorb_Flip) from the NA/PAL release of Pokemon Heartgold/Soulsilver (The DS one).
+
+The rules are explained in the link above, so I won't elaborate on them here. That said, this includes 2 QoL additions:
+- A keybind for marking both 0 and 1 simultaneously
+- A row/column marking system for filling in entire lines
+
+This also includes the levelling/score tracking system from the original game, including accurate tilesets. Closing the script will NOT save your score.
+
+"Voltorbs" are represented as 0s in all cases.
+
+For the numbers on the side, the topmost number for each row represents the total value of the row, while the bottom number represents the voltorbs. For the bottom numbers, the leftmost number shows the value.
+
+Controls:
+- Arrow keys/WASD to move the cursor
+- Enter/Space/5 to flip a tile
+- 0 - 3 to toggle the respective note on the currently selected tile
+- 4 to toggle BOTH 0 and 1 on the currently selected tile
+- R/C to toggle row/column marking mode respectively
+  - Row/Column marking mode will toggle ALL marks on that selected line
+  - This will not affect flipping tiles
+- Press any input between rounds to continue the game
+
+Any unrecognised inputs will kill the script.
